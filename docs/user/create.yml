@@ -1,0 +1,37 @@
+- Registra una persona
+---
+tags:
+  - person
+parameters:
+  - in: formData
+    name: names
+    required: true
+    type: string
+  - in: formData
+    name: paternal_lastname
+    required: true
+    type: string
+  - in: formData
+    name: maternal_lastname
+    required: true
+    type: string
+  - in: formData
+    name: person_rol_id
+    required: true
+    type: integer
+  - in: formData
+    name: document_number
+    required: true
+    type: string
+  - in: formData
+    name: photo
+    required: true
+    type: file
+responses:
+  201:
+    description: Ok
+  400:
+    description: Bad request
+  500:
+    description: Internal server error
+   
